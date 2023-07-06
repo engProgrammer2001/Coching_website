@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>iCoder</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- this is navbar code -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3" style="background-color: #e3f2fd">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Ashokicodder</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/fullwebsite/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/fullwebsite/about.html">AboutUs</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/fullwebsite/cource.html">Cources</a></li>
+                            <li><a class="dropdown-item" href="/fullwebsite/facility.html">Way to Learn</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="/fullwebsite/otherfacility.html">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="/fullwebsite/contact.html">ContactUs</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Us Start here  -->
+    <div class="container">
+        
+        <div class="text-center mt-5 mb-5">
+            <h1 class="fs-1 fw-bold">Hi, We are Here!</h1>
+            <h3>Contact Us</h3>
+        </div>
+        <div class="mb-5">
+            <h2 class="text-center mt-5">How May I Help You?</h2>
+            <p class="font-break text-center">Our team is here to help. Whether your inquiry is about our courses, services, or support, simply <br>fill out the contact form below.We look forward to hearing from you!</p>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row align-items-start">
+            <div class="col-lg-6">
+                <div class=" mb-3">
+                    <label for="contactName" class="form-label label-color-2 fs-15">Name</label>
+                    <input type="text" class="form-control fs-14 label-color-1" name="contactName" id="contactName"
+                        placeholder="Enter your name" data-bv-field="contactName">
+                    <small class="help-block" data-bv-validator="notEmpty" data-bv-for="contactName"
+                        data-bv-result="NOT_VALIDATED" style="display: none;">Please enter your name</small><small
+                        class="help-block" data-bv-validator="regexp" data-bv-for="contactName"
+                        data-bv-result="NOT_VALIDATED" style="display: none;">Please enter valid name</small>
+                </div>
+                <div class="col-lg-6 mb-3">
+                    <label for="contactEmail" class="form-label label-color-2 fs-15">Email Address</label>
+                    <input type="email" class="form-control fs-14 label-color-1" name="contactEmail" id="contactEmail"
+                        placeholder="Enter your email" data-bv-field="contactEmail">
+                    <small class="help-block" data-bv-validator="notEmpty" data-bv-for="contactEmail"
+                        data-bv-result="NOT_VALIDATED" style="display: none;">Please enter your email</small><small
+                        class="help-block" data-bv-validator="emailAddress" data-bv-for="contactEmail"
+                        data-bv-result="NOT_VALIDATED" style="display: none;">Please enter valid email</small>
+                </div>
+                <div class="col-lg-6 mb-3">
+                    <label for="contactEmail" class="form-label label-color-2 fs-15"> Mobile Number</label>
+                    <input type="email" class="form-control fs-14 label-color-1" name="contactEmail" id="contactEmail"
+                        placeholder="Enter your email" data-bv-field="contactEmail">
+                    <small class="help-block" data-bv-validator="notEmpty" data-bv-for="contactEmail"
+                        data-bv-result="NOT_VALIDATED" style="display: none;">Please enter your Number</small><small
+                        class="help-block" data-bv-validator="emailAddress" data-bv-for="contactEmail"
+                        data-bv-result="NOT_VALIDATED" style="display: none;">Please enter valid Number</small>
+                </div>
+                <div class="col-lg-6 mb-3">
+                    <label for="contactWebsiteName" class="form-label label-color-2 fs-15">Purpose</label>
+                    <select name="contactWebsiteName" id="contactWebsiteName" class="form-select" required=""
+                        data-bv-field="contactWebsiteName">
+                        <option value="">Select Purpose</option>
+                        <option value="Course"> Course</option>
+                        <option value="Services"> Services</option>
+                        <option value="Support"> Support</option>
+                        <option value="Job Application"> Job Application</option>
+                        <option value="Media"> Media</option>
+                        <option value="Others"> Others</option>
+                    </select>
+                    <small class="help-block" data-bv-validator="notEmpty" data-bv-for="contactWebsiteName"
+                        data-bv-result="NOT_VALIDATED" style="display: none;">Please select purpose</small>
+                </div>
+                <div class="col-lg-12 mb-3">
+                    <label for="contactMessage" class="form-label label-color-2 fs-15">Message</label>
+                    <textarea name="contactMessage" id="contactMessage"
+                        class="form-control fs-14 label-color-1 resize-none" cols="30" rows="4" placeholder="Message"
+                        data-bv-field="contactMessage"></textarea>
+                    <small class="help-block" data-bv-validator="notEmpty" data-bv-for="contactMessage"
+                        data-bv-result="NOT_VALIDATED" style="display: none;">Please enter your message</small><small
+                        class="help-block" data-bv-validator="regexp" data-bv-for="contactMessage"
+                        data-bv-result="NOT_VALIDATED" style="display: none;">Please enter valid message</small>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Are You Sure</label>
+                </div>
+                <div class="col-12 text-end my-2 d-flex flex-column justify-content-center">
+                    <button
+                        class="bg-primary text-white  px-5 fs-17 fw-500 mx-auto services-btn btn submit_loader rounded-pill"
+                        type="submit" title="Send Message" disabled="disabled">Send Message</button>
+                </div>
+
+            </div>
+            <div class="col mx-4">
+                <img class="rounded-5" src="/fullwebsite/img/contact_img.jpg" alt="">
+            </div>
+            <div>
+                <h2 class="text-center mt-5">Find me Here</h2>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3577.632444505141!2d73.02830095072818!3d26.273589983325564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39418c37b277d1c3%3A0x1412272be9646840!2sWsCube+Tech!5e0!3m2!1sen!2sin!4v1527575831983" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen="" class="mt-5"></iframe>
+        </div>
+    </div>
+
+    <!-- this is footer  -->
+    <div class="container-fluid text-center mt-5">
+        <footer class="blog-footer">
+            <p>@ 2022-2023 Ashokicodder IT Tranning, Inc <a href="https://getbootstrap.com/">Privacy</a> by <a
+                    href="https://twitter.com/mdo">@mdo</a>.</p>
+            <p>
+                <a href="/fullwebsite/index.html">Back to top</a>
+            </p>
+        </footer>
+    </div>
+
+    <!-- garbage code  -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
